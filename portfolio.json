@@ -1,0 +1,27 @@
+{
+    "Student":{
+        "First name":"Alexis",
+        "Last name":"Lasselin"
+    },
+
+    "Languages":[
+        {"language":"French",
+        "level":"Native"},
+        {"language":"English",
+        "level":"Okay"},
+        {"language":"Spanish",
+        "level":"Good"}
+    ],
+
+    "Skills":[
+        {"HTML": "Medium",
+        "CSS": "Bad",
+        "JavaScript": "Not good at all"
+        }
+    ],
+
+    "Experience":[
+        "I'm studying at Algosup since september 2022",
+        "I'm working at a supermarket since august 2022"
+    ]
+}
