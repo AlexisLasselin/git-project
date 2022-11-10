@@ -9,17 +9,40 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <title>Notes App</title>
-    <script src="js/step3.js" defer></script>
+    <script src="js/step4.js" defer></script>
+    <style>
+        .hide {
+            display: none
+        };
+
+        #articles-title {
+            background-color: white;
+            text-align: center;
+            padding: 10px  0;
+            cursor: crosshair;
+        }
+
+        img {
+            width: 350px;
+        }
+
+    </style>
 </head>
 
 <body>
     <header>
         <h1>Notes App</h1>
     </header>
+    <section>
+        <button class="btn btn-light"> Add</button>
+        <ul id="std-list">
+        </ul>
+    </section>
     <a id="say-hello"href="https://www.google.com" class="btn btn-success">Say Hello</a>
     <input id="user-input" type="text">
     <section>
-        <p id="p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod veritatis autem quas nemo eligendi
+        <H2 id="articles-title">Articles</H2>
+        <p id="p-2" class="bg-primary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod veritatis autem quas nemo eligendi
             saepe. Voluptates, culpa neque? Aperiam accusantium impedit nam quas rerum vel atque inventore quis at
             ipsum.</p>
         <p class="bg-dark text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis doloribus
@@ -30,6 +53,7 @@
         <footer>
             <img src="ressources/code.jpg" width="250px" alt="">
             <button class="btn btn-light">Change</button>
+            <button id="show-btn" class="btn btn-dark"> Show/Hide </button>
         </footer>
     </section>
     <footer>
