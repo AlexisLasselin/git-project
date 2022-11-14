@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <script src="js/main.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Notes App</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <label for="note-text" class="form-label"> Note Text</label>
+        <input class="form-control" type="text" name="note-text" id="note-text" placeholder="Enter your note . . .">
+        <button id="create-note" class="mt-2 btn btn-primary">Create Note ✏️</button>
+        <button id="clear-notes" class="mt-2 btn btn-danger">Clear Notes 🗑️</button>
+    </section>
+    <section class="mt-4 bg-light">
+        <h2>Notes</h2>
+        <table id="notes-list" class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Note</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+    </section>
+</body>
+</html>
