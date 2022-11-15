@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Preview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        section{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        #avatar-preview{
+            width: 400px;
+            display: block;
+        }
+        #error-output{
+            font-size: 1.5rem;
+            display: none;
+        }
+    </style>
+    <script src="js/main2.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Image Preview</h1>
+        <hr>
+    </header>
+    <section>
+        <div id="error-output" class="text text-danger"></div>
+        <input class="form-control" type="file" name="avatar" id="avatar">
+        <img id="avatar-preview" src="ressources/image-solid.svg" alt="avatar-preview">
+    </section>
+</body>
+</html>
