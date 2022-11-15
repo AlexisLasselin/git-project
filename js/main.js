@@ -1,37 +1,12 @@
-localStorage.setItem('School', 'ALGOSUP');
-
+(function() {
 let notes = [];
 
 const noteTxt = document.querySelector('#note-text');
 const createBtn = document.querySelector('#create-note');
 const noteList = document.querySelector('#notes-list > tbody');
 const clearBtn = document.querySelector('#clear-notes');
-const manageNotes = document.querySelector('#manage-notes');
-const fullscreenBtn = document.querySelector('#fullscreen');
-let isFullscreen = false;
 
-fullscreenBtn.addEventListener('click', () => {
-  if (isFullscreen) {
-    exitFullscreen();
-  } else {
-    fullscreen(document.body);
-  }
-  isFullscreen = !isFullscreen;
-});
 
-function fullscreen(element) {
-  if (element.requestFullscreen) element.requestFullscreen();
-  else if (element.webkitRequestFullscreen) element.webkitRequestFullscreen();
-  else if (element.mozRequestFullScreen) element.mozRequestFullScreen();
-  else if (element.msRequestFullscreen) element.msRequestFullscreen();  
-}
-
-function exitFullscreen() {
-  if (document.exitFullscreen) document.exitFullscreen();
-  else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
-  else if (document.mozExitFullScreen) document.mozExitFullScreen();
-  else if (document.msExitFullscreen) document.msExitFullscreen();
-}
 
 function addNote() {
   const newRow = document.createElement('tr');
@@ -120,3 +95,5 @@ noteTxt.addEventListener('keydown', (e) => {
     addNote();
   }
 });
+
+})();
