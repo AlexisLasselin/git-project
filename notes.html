@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <script src="js/main.js" defer></script>
-    
+    <style>
+      :fullscreen {
+      background-color: #FFF;
+      }
+    </style>
 </head>
 <body>
     <header>
@@ -26,11 +30,12 @@
             </div>
           </nav>
     </header>
-    <section>
+    <section id="manage-notes">
         <label for="note-text" class="form-label"> Note Text</label>
+        <button class="btn btn-light" id="fullscreen">Fullscreen</button>
         <input class="form-control" type="text" name="note-text" id="note-text" placeholder="Enter your note . . .">
-        <button id="create-note" class="mt-2 btn btn-primary">Create Note ✏️</button>
-        <button id="clear-notes" class="mt-2 btn btn-danger">Clear Notes 🗑️</button>
+        <button id="create-note" class="mt-2 btn btn-primary">Create Note <i class="fa-solid fa-pen-to-square"></i></button>
+        <button id="clear-notes" class="mt-2 btn btn-danger">Clear Notes <i class="fa-solid fa-eraser"></i></button>
     </section>
     <section class="mt-4 bg-light">
         <h2>Notes</h2>
