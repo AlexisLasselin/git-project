@@ -14,7 +14,7 @@ fullscreenBtn.addEventListener('click', () => {
   if (isFullscreen) {
     exitFullscreen();
   } else {
-    fullscreen(manageNotes);
+    fullscreen(document.body);
   }
   isFullscreen = !isFullscreen;
 });
